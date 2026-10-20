@@ -9,6 +9,9 @@ use AntonioEduardo\EstudoPhp\Interfaces\Tributavel;
 use AntonioEduardo\EstudoPhp\Entities\Produto;
 use AntonioEduardo\EstudoPhp\Entities\Servico;
 use DateTime;
+use AntonioEduardo\EstudoPhp\Entities\PagamentoCartao;
+use AntonioEduardo\EstudoPhp\Entities\PagamentoPix;
+use AntonioEduardo\EstudoPhp\Entities\Pagamento;
 
 /*
 1. Interfaces e classes abstratas: a sintaxe é quase a do Java e se aprende rápido. O Laravel injeta dependências por interface o tempo todo.
@@ -33,8 +36,6 @@ use DateTime;
  * Faca o Produto implementar Tributavel (ele ja tem o metodo, so falta o "implements").
  * Crie a classe Servico (nome, valorHora, horas) que tambem implementa Tributavel, com imposto fixo de 5%.
  * Crie uma funcao somarTotal(array $itens): float que recebe uma lista misturando Produto e Servico
- * e soma o totalComImposto() de todos usando array_map e array_sum.
- * Pergunta para responder num comentario: por que somarTotal nao precisa saber se o item e Produto ou Servico?
  * Paralelo com o Java: a sintaxe e quase identica (interface, implements).
  */
 function somarTotal(array $itens): float{
@@ -53,9 +54,10 @@ echo $somaGeral;
  *   - um metodo concreto valorFinal(): float que retorna valor * (1 + taxa()).
  * Crie PagamentoPix (taxa 0) e PagamentoCartao (taxa 0.03), que estendem Pagamento.
  * Instancie um de cada com valor 100 e imprima o valorFinal().
- * Tente instanciar Pagamento diretamente e anote o erro num comentario (depois remova a linha).
- * Pergunta para responder num comentario: qual a diferenca pratica entre isso e a interface do exercicio 7?
  */
+$pagamentoCartao = new PagamentoCartao(100);
+$pagamentoPix = new PagamentoPix(100);
+echo "\nPagamento via cartao: " . $pagamentoCartao->valorFinal() , " Pagamento via pix: " . $pagamentoPix->valorFinal();
 
 /*Exercicio 9 - Trait
  * Traits nao existem no Java. Sao blocos de metodos que voce "cola" dentro de uma classe com `use NomeDaTrait;`

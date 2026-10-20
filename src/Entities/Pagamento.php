@@ -8,6 +8,10 @@ abstract class Pagamento
     {
         $this->valor = $valor;
     }
+    public function valorFinal(): float
+    {
+        return $this->valor * (1 + $this->taxa());
+    }
     abstract function taxa(): float;
     public function getValor(): float
     {

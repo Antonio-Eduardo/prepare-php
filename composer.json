@@ -1,0 +1,20 @@
+{
+    "name": "antonio-eduardo/estudo-php",
+    "description": "projeto de estudo de PHP",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "AntonioEduardo\\EstudoPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Antonio Eduardo",
+            "email": "eduardo_m_cdc@hotmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2"
+    }
+}

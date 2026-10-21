@@ -57,7 +57,7 @@ echo $somaGeral;
  */
 $pagamentoCartao = new PagamentoCartao(100);
 $pagamentoPix = new PagamentoPix(100);
-echo "\nPagamento via cartao: " . $pagamentoCartao->valorFinal() , " Pagamento via pix: " . $pagamentoPix->valorFinal();
+echo "\nPagamento via cartao: " . $pagamentoCartao->valorFinal() , " Pagamento via pix: " . $pagamentoPix->valorFinal(), "\n";
 
 /*Exercicio 9 - Trait
  * Traits nao existem no Java. Sao blocos de metodos que voce "cola" dentro de uma classe com `use NomeDaTrait;`
@@ -66,6 +66,9 @@ echo "\nPagamento via cartao: " . $pagamentoCartao->valorFinal() , " Pagamento v
  * que retorna o valor no formato brasileiro: 24.846 vira "R$ 24,85". Pesquise a funcao number_format.
  * Use a trait no Produto e no Pagamento, e imprima o total de cada um formatado.
  * Pergunta para responder num comentario: por que isso nao poderia ser resolvido com heranca aqui?
+ * Resposta: Só da pra herdar 1 classe e tanto pagamento quanto produto ja tem uma hierarquia propria, a outra opcao seria interface
+ * pelo fator de que é possivel implementar varias interfaces e nao apenas uma, porem interfaces nao podem definir o corpo apenas o contrato do metodo
+ * por isso a escolha viavel é usar traits que tambem podem ser usadas varias e podem ter corpo
  */
 
 /*Exercicio 10 - Exceptions

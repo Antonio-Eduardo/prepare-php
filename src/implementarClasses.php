@@ -14,6 +14,7 @@ $produto->preco, " / ",
 $produto->quantidade, " / ",
 $produto->totalComImposto(), " / ",
 $produto->categoria->value, "\n";
+
 $valorDesconto = $produto->totalComDesconto();
 $statusPagamento = $produto->Pagar($valorDesconto);
 if ($statusPagamento) {

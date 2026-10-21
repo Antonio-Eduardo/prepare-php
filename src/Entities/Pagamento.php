@@ -1,16 +1,17 @@
 <?php
 
 namespace AntonioEduardo\EstudoPhp\Entities;
-
+use AntonioEduardo\EstudoPhp\Traits\FormataMoeda;
 abstract class Pagamento
 {
+    use FormataMoeda;
     public function __construct(private float $valor)
     {
         $this->valor = $valor;
     }
-    public function valorFinal(): float
+    public function valorFinal(): string
     {
-        return $this->valor * (1 + $this->taxa());
+        return $this->formatarMoeda($this->valor * (1 + $this->taxa()));
     }
     abstract function taxa(): float;
     public function getValor(): float

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-require __DIR__ . '/../vendor/autoload.php';
+require __DIR__ . '/../../vendor/autoload.php';
 
 /*Exercicio 1
 Variáveis e saída. Guarde seu nome e sua idade em variáveis e imprima “Olá, NOME, você tem X anos” com echo.

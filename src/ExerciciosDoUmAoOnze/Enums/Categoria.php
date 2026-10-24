@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AntonioEduardo\EstudoPhp\Enums;
+namespace AntonioEduardo\EstudoPhp\ExerciciosDoUmAoOnze\Enums;
 enum Categoria: string
 {
     //case define o valor possivel do enum

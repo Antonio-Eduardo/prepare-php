@@ -1,7 +1,8 @@
 <?php
 
-namespace AntonioEduardo\EstudoPhp\Entities;
-use AntonioEduardo\EstudoPhp\Traits\FormataMoeda;
+namespace AntonioEduardo\EstudoPhp\ExerciciosDoUmAoOnze\Entities;
+use AntonioEduardo\EstudoPhp\ExerciciosDoUmAoOnze\Traits\FormataMoeda;
+
 abstract class Pagamento
 {
     use FormataMoeda;

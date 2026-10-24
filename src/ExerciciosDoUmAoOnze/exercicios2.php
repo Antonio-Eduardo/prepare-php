@@ -4,14 +4,12 @@ declare(strict_types=1);
 
 require __DIR__ . '/../vendor/autoload.php';
 
-use AntonioEduardo\EstudoPhp\Enums\Categoria;
-use AntonioEduardo\EstudoPhp\Interfaces\Tributavel;
-use AntonioEduardo\EstudoPhp\Entities\Produto;
-use AntonioEduardo\EstudoPhp\Entities\Servico;
-use DateTime;
-use AntonioEduardo\EstudoPhp\Entities\PagamentoCartao;
-use AntonioEduardo\EstudoPhp\Entities\PagamentoPix;
-use AntonioEduardo\EstudoPhp\Entities\Pagamento;
+use AntonioEduardo\EstudoPhp\ExerciciosDoUmAoOnze\Entities\PagamentoCartao;
+use AntonioEduardo\EstudoPhp\ExerciciosDoUmAoOnze\Entities\PagamentoPix;
+use AntonioEduardo\EstudoPhp\ExerciciosDoUmAoOnze\Entities\Produto;
+use AntonioEduardo\EstudoPhp\ExerciciosDoUmAoOnze\Entities\Servico;
+use AntonioEduardo\EstudoPhp\ExerciciosDoUmAoOnze\Enums\Categoria;
+use AntonioEduardo\EstudoPhp\ExerciciosDoUmAoOnze\Interfaces\Tributavel;
 
 /*
 1. Interfaces e classes abstratas: a sintaxe é quase a do Java e se aprende rápido. O Laravel injeta dependências por interface o tempo todo.
@@ -95,16 +93,4 @@ echo "\nPagamento via cartao: " . $pagamentoCartao->valorFinal() , " Pagamento v
  * Chame tres vezes e imprima $contador. Anote o que o & muda.
  * Parte D: crie a funcao precoMinimo(float $minimo): callable, que retorna uma closure para usar no array_filter.
  * Use com uma lista de Produto: array_filter($produtos, precoMinimo(10)).
- */
-
-/*Exercicio 12 - Juntando tudo
- * Crie a classe Carrinho com:
- *   - uma lista privada de itens Tributavel, comecando vazia;
- *   - adicionar(Tributavel $item): void;
- *   - total(): float, somando o totalComImposto() de todos os itens;
- *   - filtrar(callable $criterio): array, que devolve os itens que passam no criterio;
- *   - a trait FormataMoeda, para imprimir o total formatado.
- * Regra: se total() for chamado com o carrinho vazio, lance uma exception sua, CarrinhoVazioException.
- * Teste com produtos e servicos misturados, filtre por um criterio usando closure
- * e trate o caso do carrinho vazio com try/catch.
  */

@@ -3,12 +3,12 @@
 declare(strict_types=1);
 
 //nome completo da classe
-namespace AntonioEduardo\EstudoPhp\Entities;
+namespace AntonioEduardo\EstudoPhp\ExerciciosDoUmAoOnze\Entities;
 
 //Qual classe é usada
-use AntonioEduardo\EstudoPhp\Enums\Categoria;
-use AntonioEduardo\EstudoPhp\Interfaces\Tributavel;
-use AntonioEduardo\EstudoPhp\Traits\FormataMoeda;
+use AntonioEduardo\EstudoPhp\ExerciciosDoUmAoOnze\Enums\Categoria;
+use AntonioEduardo\EstudoPhp\ExerciciosDoUmAoOnze\Interfaces\Tributavel;
+use AntonioEduardo\EstudoPhp\ExerciciosDoUmAoOnze\Traits\FormataMoeda;
 
 //Não se usa final e readonly em entidades por elas mudarem ao longo da vida, foi usado aqui por mera praticidade e por ser um exercicio
 final class Produto extends ClasseComConstante implements Tributavel

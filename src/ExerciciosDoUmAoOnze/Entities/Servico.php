@@ -1,9 +1,10 @@
 <?php
 
 declare(strict_types=1);
-namespace AntonioEduardo\EstudoPhp\Entities;
-use AntonioEduardo\EstudoPhp\Interfaces\Tributavel;
+namespace AntonioEduardo\EstudoPhp\ExerciciosDoUmAoOnze\Entities;
+use AntonioEduardo\EstudoPhp\ExerciciosDoUmAoOnze\Interfaces\Tributavel;
 use DateTime;
+
 date_default_timezone_set('America/Sao_Paulo');
 
 class Servico implements Tributavel

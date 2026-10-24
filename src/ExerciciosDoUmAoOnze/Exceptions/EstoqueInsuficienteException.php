@@ -1,8 +1,6 @@
 <?php
 
-namespace AntonioEduardo\EstudoPhp\Exceptions;
-
-use Throwable;
+namespace AntonioEduardo\EstudoPhp\ExerciciosDoUmAoOnze\Exceptions;
 
 class EstoqueInsuficienteException extends \Exception
 {

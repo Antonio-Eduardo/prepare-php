@@ -1,6 +1,6 @@
 <?php
 
-namespace AntonioEduardo\EstudoPhp\Entities;
+namespace AntonioEduardo\EstudoPhp\ExerciciosDoUmAoOnze\Entities;
 
 class PagamentoPix extends Pagamento
 {

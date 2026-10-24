@@ -1,8 +1,8 @@
 <?php
 
-namespace AntonioEduardo\EstudoPhp\Services;
-use AntonioEduardo\EstudoPhp\Entities\Produto;
-use AntonioEduardo\EstudoPhp\Exceptions\EstoqueInsuficienteException;
+namespace AntonioEduardo\EstudoPhp\ExerciciosDoUmAoOnze\Services;
+use AntonioEduardo\EstudoPhp\ExerciciosDoUmAoOnze\Entities\Produto;
+use AntonioEduardo\EstudoPhp\ExerciciosDoUmAoOnze\Exceptions\EstoqueInsuficienteException;
 
 class ProdutoServices
 {

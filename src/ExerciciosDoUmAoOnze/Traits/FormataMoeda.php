@@ -1,6 +1,6 @@
 <?php
 
-namespace AntonioEduardo\EstudoPhp\Traits;
+namespace AntonioEduardo\EstudoPhp\ExerciciosDoUmAoOnze\Traits;
 trait FormataMoeda
 {
 public function formatarMoeda(float $valor): string{

@@ -1,6 +1,6 @@
 <?php
 
-namespace AntonioEduardo\EstudoPhp\Interfaces;
+namespace AntonioEduardo\EstudoPhp\ExerciciosDoUmAoOnze\Interfaces;
 
 interface Tributavel
 {
